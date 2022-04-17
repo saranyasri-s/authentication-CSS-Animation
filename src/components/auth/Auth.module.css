@@ -24,6 +24,21 @@
   top: -330px;
   left: -200px;
   transform: rotate(360deg);
+  animation: slidein 2s;
+}
+
+@keyframes slidein {
+  0% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(200px);
+    height: 800px;
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
 .Logincurve {
   background: rgb(9, 175, 238);
@@ -39,6 +54,21 @@
   top: -230px;
   left: -200px;
   transform: rotate(360deg);
+  animation: slidein2 2s;
+}
+
+@keyframes slidein2 {
+  0% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(140px);
+    height: 600px;
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
 
 .heading {
