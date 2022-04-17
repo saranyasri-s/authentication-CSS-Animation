@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import classes from "./Login.module.css";
 import { Link } from "react-router-dom";
-function Login() {
+function Login(props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const emailHandler = (e) => {
@@ -9,6 +9,10 @@ function Login() {
   };
   const passwordHandler = (e) => {
     setPassword(e.target.value);
+  };
+  const changeToSignUpHandler = (e) => {
+    e.preventDefault();
+    props.changeToSignUp();
   };
   return (
     <div className={classes.Login}>
@@ -26,7 +30,7 @@ function Login() {
       ></input>
       <button>Sign In</button>
       <p>
-        Dont have an account? <Link to="SignUp">Sign Up</Link>
+        Dont have an account? <a onClick={changeToSignUpHandler}>Sign Up</a>
       </p>
     </div>
   );

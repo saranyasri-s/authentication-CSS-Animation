@@ -1,7 +1,7 @@
 .form {
   width: 280px;
-  margin: 3rem auto;
-  height: 430px;
+  margin: 2rem auto;
+
   position: relative;
   background-color: white;
   overflow: hidden;
@@ -21,11 +21,26 @@
   position: absolute;
   height: 100%;
   width: 550px;
-  top: -300px;
+  top: -330px;
   left: -200px;
-
   transform: rotate(360deg);
 }
+.Logincurve {
+  background: rgb(9, 175, 238);
+  background: linear-gradient(
+    90deg,
+    rgba(9, 175, 238, 1) 42%,
+    rgba(6, 184, 241, 1) 79%
+  );
+  border-radius: 50%;
+  position: absolute;
+  height: 100%;
+  width: 550px;
+  top: -230px;
+  left: -200px;
+  transform: rotate(360deg);
+}
+
 .heading {
   padding: 1rem;
   margin-top: 20px;
