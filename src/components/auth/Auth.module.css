@@ -1,0 +1,44 @@
+.form {
+  width: 280px;
+  margin: 3rem auto;
+  height: 430px;
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #8080804d;
+  border: 1px solid rgb(9 175 238 / 14%);
+}
+
+.halfCurve {
+  background: rgb(9, 175, 238);
+  background: linear-gradient(
+    90deg,
+    rgba(9, 175, 238, 1) 42%,
+    rgba(6, 184, 241, 1) 79%
+  );
+  border-radius: 50%;
+  position: absolute;
+  height: 100%;
+  width: 550px;
+  top: -300px;
+  left: -200px;
+
+  transform: rotate(360deg);
+}
+.heading {
+  padding: 1rem;
+  margin-top: 20px;
+  color: white;
+  position: relative;
+  z-index: 5;
+}
+.welcome {
+  margin: 0;
+
+  font-size: 1.2rem;
+}
+
+.heading p {
+  margin: 5px 0;
+}

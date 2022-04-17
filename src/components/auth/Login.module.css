@@ -1,0 +1,49 @@
+.Login {
+  padding: 1rem;
+  display: flex;
+  flex-flow: column;
+}
+.Login input {
+  transition: all 0.5s ease-in;
+  margin: 0.5rem 0;
+  padding: 15px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #80808052;
+}
+
+.Login input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgb(9, 175, 238);
+}
+.Login input::placeholder {
+  color: grey;
+}
+.Login button {
+  background: rgb(9, 175, 238);
+  background: linear-gradient(
+    90deg,
+    rgba(9, 175, 238, 1) 42%,
+    rgba(6, 184, 241, 1) 79%
+  );
+  border-radius: 20px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  margin: 1rem 20px;
+  color: white;
+  cursor: pointer;
+}
+.Login p {
+  text-align: center;
+  color: rgba(9, 175, 238, 1);
+}
+.Login a {
+  color: rgba(9, 175, 238, 1);
+  text-decoration: none;
+  font-weight: 700;
+}
+.Login a:hover {
+  text-decoration: underline;
+}
